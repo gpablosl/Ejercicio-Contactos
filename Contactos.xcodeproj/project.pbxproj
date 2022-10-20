@@ -12,6 +12,11 @@
 		3D34AEB92901A57A009B1F2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D34AEB72901A57A009B1F2F /* Main.storyboard */; };
 		3D34AEBB2901A584009B1F2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D34AEBA2901A584009B1F2F /* Assets.xcassets */; };
 		3D34AEBE2901A584009B1F2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D34AEBC2901A584009B1F2F /* LaunchScreen.storyboard */; };
+		3D34AEC62901A8F6009B1F2F /* AddController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D34AEC52901A8F6009B1F2F /* AddController.swift */; };
+		3D34AEC82901A907009B1F2F /* ActualizarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D34AEC72901A907009B1F2F /* ActualizarController.swift */; };
+		3D34AECA2901AB0B009B1F2F /* CeldaContactoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D34AEC92901AB0B009B1F2F /* CeldaContactoController.swift */; };
+		3D34AECC2901AB50009B1F2F /* Contacto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D34AECB2901AB50009B1F2F /* Contacto.swift */; };
+		3D34AECE2901B042009B1F2F /* ContactosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D34AECD2901B042009B1F2F /* ContactosController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		3D34AEBA2901A584009B1F2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D34AEBD2901A584009B1F2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D34AEBF2901A584009B1F2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D34AEC52901A8F6009B1F2F /* AddController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddController.swift; sourceTree = "<group>"; };
+		3D34AEC72901A907009B1F2F /* ActualizarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActualizarController.swift; sourceTree = "<group>"; };
+		3D34AEC92901AB0B009B1F2F /* CeldaContactoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaContactoController.swift; sourceTree = "<group>"; };
+		3D34AECB2901AB50009B1F2F /* Contacto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contacto.swift; sourceTree = "<group>"; };
+		3D34AECD2901B042009B1F2F /* ContactosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactosController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +70,11 @@
 				3D34AEBA2901A584009B1F2F /* Assets.xcassets */,
 				3D34AEBC2901A584009B1F2F /* LaunchScreen.storyboard */,
 				3D34AEBF2901A584009B1F2F /* Info.plist */,
+				3D34AEC52901A8F6009B1F2F /* AddController.swift */,
+				3D34AEC72901A907009B1F2F /* ActualizarController.swift */,
+				3D34AEC92901AB0B009B1F2F /* CeldaContactoController.swift */,
+				3D34AECB2901AB50009B1F2F /* Contacto.swift */,
+				3D34AECD2901B042009B1F2F /* ContactosController.swift */,
 			);
 			path = Contactos;
 			sourceTree = "<group>";
@@ -135,6 +150,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D34AECA2901AB0B009B1F2F /* CeldaContactoController.swift in Sources */,
+				3D34AEC62901A8F6009B1F2F /* AddController.swift in Sources */,
+				3D34AECC2901AB50009B1F2F /* Contacto.swift in Sources */,
+				3D34AEC82901A907009B1F2F /* ActualizarController.swift in Sources */,
+				3D34AECE2901B042009B1F2F /* ContactosController.swift in Sources */,
 				3D34AEB62901A57A009B1F2F /* ViewController.swift in Sources */,
 				3D34AEB42901A57A009B1F2F /* AppDelegate.swift in Sources */,
 			);
