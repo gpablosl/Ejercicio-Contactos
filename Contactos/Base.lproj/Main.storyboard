@@ -19,67 +19,82 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="RQs-qt-Lbi" kind="relationship" relationship="rootViewController" id="MlP-Sd-McI"/>
+                        <segue destination="71k-MJ-dS2" kind="relationship" relationship="rootViewController" id="xc3-Zd-dxO"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ir1-Rr-OSv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-828" y="118"/>
         </scene>
-        <!--Table View Controller-->
-        <scene sceneID="OMk-4P-mq2">
+        <!--Contactos-->
+        <scene sceneID="iqA-Hj-gIY">
             <objects>
-                <tableViewController id="RQs-qt-Lbi" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="GZc-g2-NyM">
+                <viewController id="71k-MJ-dS2" customClass="ContactoController" customModule="Contactos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vJV-qL-WDH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="celdaContacto" rowHeight="89" id="VTR-rB-PpZ" customClass="CeldaContactoController" customModule="Contactos" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="375" height="89"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VTR-rB-PpZ" id="FSV-MJ-sSU">
-                                    <rect key="frame" x="0.0" y="0.0" width="341" height="88.666666666666671"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XMH-hM-e8M">
-                                            <rect key="frame" x="16" y="11" width="62" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Telefono" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gHz-U7-n4f">
-                                            <rect key="frame" x="16" y="57" width="66" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                </tableViewCellContentView>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Bqo-D2-U9s">
+                                <rect key="frame" x="16" y="61" width="343" height="733"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="celdaContacto" rowHeight="100" id="qCt-f9-HXe" customClass="CeldaContactoController" customModule="Contactos" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qCt-f9-HXe" id="G4F-KV-o8A" customClass="CeldaContactoController" customModule="Contactos" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="310" height="99.666666666666671"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4jh-Bd-Ezd">
+                                                    <rect key="frame" x="29" y="17" width="299" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Numero" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zgq-Dy-ezz">
+                                                    <rect key="frame" x="29" y="57" width="299" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" button="YES"/>
+                                        </accessibility>
+                                        <connections>
+                                            <outlet property="lblNombre" destination="4jh-Bd-Ezd" id="fq5-e8-0xZ"/>
+                                            <outlet property="lblNumero" destination="zgq-Dy-ezz" id="Tvx-jg-TdZ"/>
+                                            <segue destination="3Uk-og-0XT" kind="show" identifier="goToActualizar" id="GtG-Bc-pl2"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                                 <connections>
-                                    <outlet property="lblNombre" destination="XMH-hM-e8M" id="KNp-dA-7g0"/>
-                                    <outlet property="lblTelefono" destination="gHz-U7-n4f" id="7FW-eP-ozT"/>
+                                    <outlet property="dataSource" destination="71k-MJ-dS2" id="S0w-Nk-ABo"/>
+                                    <outlet property="delegate" destination="71k-MJ-dS2" id="L5B-24-UcI"/>
                                 </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="RQs-qt-Lbi" id="M52-3F-Wt2"/>
-                            <outlet property="delegate" destination="RQs-qt-Lbi" id="SN8-OE-2pB"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="IfD-GR-Peg">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="uac-vS-fmT">
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="HWg-ki-lQX"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Contactos" id="0UG-Qi-MLo">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="U2e-2c-Q75">
                             <connections>
-                                <segue destination="k2u-La-s7Z" kind="show" id="uVk-Na-6cM"/>
+                                <segue destination="k2u-La-s7Z" kind="show" identifier="goToAdd" id="Nb5-dk-Upi"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2R0-J5-NLk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                    <connections>
+                        <outlet property="tvContactos" destination="Bqo-D2-U9s" id="fbJ-Hf-CaX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uq8-tn-uz7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="116" y="116.00985221674877"/>
+            <point key="canvasLocation" x="103.2" y="117.48768472906404"/>
         </scene>
         <!--Add Controller-->
         <scene sceneID="fyQ-P2-Hj7">
@@ -114,6 +129,9 @@
                                 <rect key="frame" x="286" y="384" width="56" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Guardar"/>
+                                <connections>
+                                    <action selector="doTapAgregar:" destination="k2u-La-s7Z" eventType="touchUpInside" id="J4Q-nm-ohR"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gpQ-Yj-nOq">
                                 <rect key="frame" x="16" y="188" width="343" height="30"/>
@@ -134,8 +152,8 @@
                         <viewLayoutGuide key="safeArea" id="eCE-ux-FWJ"/>
                     </view>
                     <connections>
-                        <outlet property="lblNombre" destination="a1v-3j-Si2" id="fJc-Ya-TeR"/>
-                        <outlet property="lblTelefono" destination="dHV-P4-UNE" id="gUr-xc-zxn"/>
+                        <outlet property="txtNombre" destination="gpQ-Yj-nOq" id="q1Y-hy-Dv1"/>
+                        <outlet property="txtTelefono" destination="qu0-Kg-YRr" id="LQb-14-SLS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ezW-om-yjC" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -175,6 +193,9 @@
                                 <rect key="frame" x="280" y="382" width="68" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Actualizar"/>
+                                <connections>
+                                    <action selector="doTapActualizar:" destination="3Uk-og-0XT" eventType="touchUpInside" id="xxb-63-sF8"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="stM-oE-Xkm">
                                 <rect key="frame" x="16" y="186" width="343" height="30"/>
@@ -195,8 +216,8 @@
                         <viewLayoutGuide key="safeArea" id="LO2-Qo-nac"/>
                     </view>
                     <connections>
-                        <outlet property="lblNombre" destination="ack-4n-Iua" id="hNq-Rc-jIH"/>
-                        <outlet property="lblTelefono" destination="jdy-9C-UQb" id="0gI-1L-B3z"/>
+                        <outlet property="txtNombre" destination="stM-oE-Xkm" id="MwT-hQ-uDR"/>
+                        <outlet property="txtTelefono" destination="ghQ-z0-dpY" id="Qdp-7e-vQ3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cat-9D-Wjv" userLabel="First Responder" sceneMemberID="firstResponder"/>

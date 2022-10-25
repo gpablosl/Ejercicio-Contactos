@@ -10,12 +10,24 @@ import UIKit
 
 class AddController: UIViewController {
     
-    @IBOutlet weak var lblNombre: UILabel!
+    var contacto : Contacto?
     
-    @IBOutlet weak var lblTelefono: UILabel!
+    var callBackAgregarContacto : ((Contacto) -> Void)?
+    
+    
+    @IBOutlet weak var txtTelefono: UITextField!
+    
+    @IBOutlet weak var txtNombre: UITextField!
     
     override func viewDidLoad(){
         super.viewDidLoad()
         
+    }
+    @IBAction func doTapAgregar(_ sender: Any) {
+        if callBackAgregarContacto != nil {
+            contacto = Contacto(nombre: txtNombre.text ?? "nombre", telefono: txtTelefono.text ?? "telefono")
+            callBackAgregarContacto!(contacto!)
+            self.navigationController?.popViewController(animated: true)
+        }
     }
 }
